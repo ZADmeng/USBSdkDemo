@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements ZMTDataReceived {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ReceivedList.addDataReceived(this);
+         DeviceUtil.getDeviceMac();//获取设备mac。
     }
 
     @Override
