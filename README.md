@@ -1,11 +1,11 @@
 # USBSdkDemo
 ### 添加     maven { url "https://jitpack.io" }
 ### 以aar的形式引入项目
-、、、
+```
 implementation(name:'usbSerialForAndroid-release', ext:'aar')
-、、、
+```
 ### 在你的Application 中启动服务
-、、、
+```
 public class ZMTApplication extends Application {
     @Override
     public void onCreate() {
@@ -14,9 +14,9 @@ public class ZMTApplication extends Application {
         startService(intent);
     }
 }
-、、、
+```
 ### 在任意activity implements ZMTDataReceived 
-、、、
+```
 public class MainActivity extends AppCompatActivity implements ZMTDataReceived {
 
     @Override
@@ -47,4 +47,4 @@ public class MainActivity extends AppCompatActivity implements ZMTDataReceived {
         return sf.format(d);
     }
 }
-、、、
+```
