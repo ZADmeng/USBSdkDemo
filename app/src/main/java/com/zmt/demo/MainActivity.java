@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.hoho.android.usbserial.common.DataItem;
+import com.hoho.android.usbserial.common.DeviceUtil;
 import com.hoho.android.usbserial.common.ReceivedList;
 import com.hoho.android.usbserial.common.ZMTDataReceived;
 
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements ZMTDataReceived {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ReceivedList.addDataReceived(this);
+        DeviceUtil.getDeviceMac();//获取设备mac。
     }
 
     @Override
