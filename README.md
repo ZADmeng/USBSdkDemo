@@ -1,6 +1,6 @@
 # USBSdkDemo
 ### 添加     maven { url "https://jitpack.io" }
-以aar的形式引入项目
+### 以aar的形式引入项目
 、、、
 implementation(name:'usbSerialForAndroid-release', ext:'aar')
 、、、
@@ -15,7 +15,7 @@ public class ZMTApplication extends Application {
     }
 }
 、、、
-在任意activity implements ZMTDataReceived 
+### 在任意activity implements ZMTDataReceived 
 、、、
 public class MainActivity extends AppCompatActivity implements ZMTDataReceived {
 
