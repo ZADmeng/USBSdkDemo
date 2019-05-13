@@ -1,8 +1,10 @@
 package com.zmt.demo;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.hoho.android.usbserial.common.DataItem;
 import com.hoho.android.usbserial.common.DeviceUtil;
@@ -13,7 +15,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements ZMTDataReceived {
+public class MainActivity extends Activity implements ZMTDataReceived {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
